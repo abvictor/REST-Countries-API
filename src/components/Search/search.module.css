@@ -1,0 +1,18 @@
+.input_div {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.input_div > span {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 40px;
+  background-color: white;
+}
+.input_search {
+  height: 40px;
+  width: 400px;
+  text-indent: 8px;
+}
