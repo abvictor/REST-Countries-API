@@ -24,19 +24,16 @@ function useFetchCountries() {
     })
       .then((res) => res.json())
       .then(function (json) {
-        json.map(function (country) {
-          let info = [
-            {
-              flag: country.flags.svg,
-              name: country.name.common,
-              population: country.population,
-              region: country.region,
-              capital: country.capital,
-            },
-          ];
-
-          setCountries((prev) => [...prev, [info]]);
+        let info = json.map((country) => {
+          return {
+            flag: country.flags.svg,
+            name: country.name.common,
+            population: country.population,
+            region: country.region,
+            capital: country.capital,
+          };
         });
+        setCountries(info);
       })
       .catch((err) => {
         setError(err);

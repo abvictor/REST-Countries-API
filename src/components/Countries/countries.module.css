@@ -1,38 +1,54 @@
 .main_container {
   display: grid;
-  justify-content: center;
-  align-items: center;
+    
+  margin-top: 2rem;
+  padding: 0 4rem
+ 
 
+}
+
+.countries_container{
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  margin-left: 120px;
+  justify-content: center;
+  grid-gap: 3rem;
+  
 
-  margin-top: 100px;
 }
 
-.card_styles {
-  width: 300px;
-  height: 350px;
-  background-color: white;
-  list-style: none;
+
+.card_styles{
+margin-top: 4rem;
+width: 100%;
+height: 20rem;
+
+background-color: white;
+border-radius: 10px;
+ 
 }
-.card_items span {
+.card_styles img{
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.country_info{
+ margin-left: 0.8rem;
+ margin-top: 1rem;
+}
+
+.items > h3{
+  margin-left: 1rem;
+}
+.items > p{
   display: flex;
+  
+  margin-top: .8rem;
+  margin-left: 1rem;
+}
 
-  font-size: 24px;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-.card_items p {
-  display: flex;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-.card_styles > img {
-  width: 300px;
-  height: 200px;
-  margin-top: 0;
-}
 
 .loading {
   display: flex;
@@ -41,3 +57,37 @@
   margin-top: 80px;
   font-size: 3rem;
 }
+
+a{
+
+  text-decoration: none;
+  color: black;
+}
+
+
+.filters{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 100%;
+ 
+ 
+}
+
+
+.input_search{
+  height: 3rem;
+  width: 12rem;
+  font-weight: 800;
+  text-indent: .8rem;
+}
+
+
+.select_filter{
+  height: 3rem;
+  width: 10rem;
+  font-weight: 800;
+  text-indent: .5rem;
+}
+

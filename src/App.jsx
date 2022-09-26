@@ -1,22 +1,12 @@
-import { useState, useEffect } from "react";
+import Home from '../src/pages/Home';
 
-import Header from "../src/components/Header/Header";
-import Search from "../src/components/Search/Search";
-import Filters from "./components/Filters/Filters";
-import Countries from "../src/components/Countries/Countries";
-import styles from "./App.module.css";
-
+import { BrowserRouter } from 'react-router-dom';
 function App() {
-  return (
-    <div className="app_container">
-      <Header />
-      <div className={styles.search_filter_div}>
-        <Search />
-        <Filters />
-      </div>
-
-      <Countries />
-    </div>
+   return (
+    <BrowserRouter>
+    <Home />
+   
+  </BrowserRouter>
   );
 }
 
