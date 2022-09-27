@@ -102,7 +102,7 @@ margin-left: 0.8rem;
     justify-content: center;
     align-items: center;
    
-    padding: 0 1rem;
+   padding: 0 1rem;
   }
 
   .countries_container{
@@ -121,6 +121,46 @@ margin-left: 0.8rem;
     font-size: .75rem;
     text-indent: 0;
   }
+
+  
+}
+@media screen and (max-width: 320px) {
+
+.main_container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding: 0;
+margin: 0;
+}
+
+.filters{
+display: flex;
+justify-content: center;
+gap: 1rem;
+align-items: center;
+margin-top: 1rem;
+
+}
+
+.input_search{
+height: 2.5rem;
+width: 9rem;
+font-weight: 800;
+font-size: .65rem;
+text-indent: .2rem;
+}
+.select_filter{
+
+height: 2.5rem;
+width: 6rem;
+
+}
+
+.countries_container{
+width: 100%;
+}
 }
 
 `

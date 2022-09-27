@@ -32,6 +32,20 @@ padding: 3rem;
     padding: 0rem;
   }
  
+
 }
+@media screen and (max-width: 320px) {
+  .header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    font-size: 1rem;
+  
+    padding: 0rem;
+  }
+  }
 
 `
