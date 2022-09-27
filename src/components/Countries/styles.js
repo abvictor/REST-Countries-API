@@ -1,3 +1,7 @@
+import styled from "styled-components";
+
+export const Container = styled.div`
+
 .main_container {
   display: grid;  
   margin-top: 2rem;
@@ -17,7 +21,7 @@ margin-top: 4rem;
 width: 100%;
 height: 20rem;
 
-background-color: white;
+background-color: ${props =>props.theme.colors.secundary};
 border-radius: 10px;
  
 }
@@ -29,12 +33,18 @@ border-radius: 10px;
 }
 
 .country_info{
- margin-left: 0.8rem;
- margin-top: 1rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+margin-left: 0.8rem;
+
+ margin-top: .5rem;
+ color: ${props =>props.theme.colors.text};
 }
 
 .items > h3{
   margin-left: 1rem;
+  color: ${props =>props.theme.colors.text};
 }
 .items > p{
   display: flex;
@@ -50,12 +60,7 @@ border-radius: 10px;
   align-items: center;
   margin-top: 80px;
   font-size: 3rem;
-}
-
-a{
-
-  text-decoration: none;
-  color: black;
+  color: ${props =>props.theme.colors.text};
 }
 
 
@@ -65,7 +70,6 @@ a{
   align-items: center;
   
   width: 100%;
- 
  
 }
 
@@ -111,3 +115,5 @@ a{
     text-indent: 0;
   }
 }
+
+`
