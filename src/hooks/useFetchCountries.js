@@ -10,7 +10,6 @@ function useFetchCountries() {
       capital: "",
     },
   ]);
-
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -33,6 +32,7 @@ function useFetchCountries() {
             capital: country.capital,
           };
         });
+
         setCountries(info);
       })
       .catch((err) => {
@@ -44,6 +44,6 @@ function useFetchCountries() {
       });
   }, [url]);
 
-  return { countries, loading, error };
+  return { getCountries: countries, loading, error };
 }
 export default useFetchCountries;
