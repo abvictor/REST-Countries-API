@@ -34,12 +34,14 @@ const Countries = () => {
 
 
 
-  if (loading) return <h3 className="loading">Carregando...</h3>;
+  if(loading) return <h1 className="loading">Carregando...</h1>
   if (error) console.log(error);
 
   return (
     <Container>
+    
     <main className="main_container">
+      
       <div className="filters">
         <input
           placeholder="Search for a country..."
@@ -47,9 +49,9 @@ const Countries = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
         <select className="select_filter" onChange={handleFilterCountriesByRegion}>
-          <option value="">Search by region</option>
+          <option value="" className="options">Search by region</option>
           {filteredRegions.map((country, index) => (
-            <option key={index}>{country}</option>
+            <option key={index} className="options">{country}</option>
           ))}
         </select>
       </div>
@@ -99,7 +101,7 @@ const Countries = () => {
           ))}
         </div>
         ):  (
-          <div className={styles.countries_container}>
+          <div className="countries_container">
           {region.map((country, index) => (
              <div className="card_styles" key={index}>
              <div className="items">

@@ -5,7 +5,7 @@ export const Container = styled.div`
 .main_container {
   display: grid;  
   margin-top: 2rem;
-  padding: 0 4rem
+  padding: 0 4rem;
  
 }
 
@@ -17,9 +17,9 @@ export const Container = styled.div`
 }
 
 .card_styles{
-margin-top: 4rem;
+margin-top: 4.5rem;
 width: 100%;
-height: 20rem;
+height: 24rem;
 
 background-color: ${props =>props.theme.colors.secundary};
 border-radius: 10px;
@@ -27,7 +27,7 @@ border-radius: 10px;
 }
 .card_styles img{
   width: 100%;
-  height: 12rem;
+  height: 14rem;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -58,9 +58,9 @@ margin-left: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
-  font-size: 3rem;
-  color: ${props =>props.theme.colors.text};
+ 
+ 
+  color: ${props =>props.theme.colors.text} !important;
 }
 
 
@@ -85,10 +85,17 @@ margin-left: 0.8rem;
   width: 10rem;
   font-weight: 800;
   text-indent: .5rem;
+  background-color: ${props =>props.theme.colors.secundary};
+  color: ${props =>props.theme.colors.text};
+}
+.options{
+  color: ${props =>props.theme.colors.text};
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 925px) {
   .main_container{
     display: flex;
     flex-wrap: wrap;
