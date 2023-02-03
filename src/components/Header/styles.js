@@ -10,6 +10,7 @@ export const Container = styled.div`
     height: 6rem;
     font-size: 1.25rem;
     color: ${(props) => props.theme.colors.text};
+    transition: 1s;
     background-color: ${(props) => props.theme.colors.secundary};
 
     p {

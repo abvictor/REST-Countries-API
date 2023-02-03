@@ -1,5 +1,8 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
+import { fadeInLeft } from "react-animations";
+
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
 export const Container = styled.div`
   .main_container {
     display: grid;
@@ -12,6 +15,7 @@ export const Container = styled.div`
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     grid-gap: 3rem;
+    animation: 1s ${fadeInLeftAnimation};
   }
 
   .card_styles {
